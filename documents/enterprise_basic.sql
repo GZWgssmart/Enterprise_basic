@@ -24,7 +24,7 @@ CREATE TABLE t_news(
 
 DROP TABLE IF EXISTS t_case;
 CREATE TABLE t_case(
-  id varchar(36) NOT NULL COMMENT '编号',
+  id varchar(36) NOT NULL COMMENT '编号 ',
   name varchar(100) NOT NULL COMMENT '案例名称',
   customer varchar(100) NOT NULL COMMENT '客户名称',
   des varchar(500) NOT NULL COMMENT '案例详情',

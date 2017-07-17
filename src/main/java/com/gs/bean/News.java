@@ -8,6 +8,7 @@ import java.util.Date;
 public class News {
     private String id;
     private String title;
+    private String des; // 新闻详情
     private String image;
     private Date createdTime;
 
@@ -25,6 +26,14 @@ public class News {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getDes() {
+        return des;
+    }
+
+    public void setDes(String des) {
+        this.des = des;
     }
 
     public String getImage() {

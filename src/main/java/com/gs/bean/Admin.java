@@ -6,7 +6,7 @@ package com.gs.bean;
 public class Admin {
     private String id;
     private String name;
-    private String password;
+    private String password; //管理员密码
 
     public String getId() {
         return id;

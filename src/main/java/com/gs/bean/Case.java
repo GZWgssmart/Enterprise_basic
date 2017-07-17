@@ -9,7 +9,7 @@ public class Case {
     private String id;
     private String name;
     private String customer;// 客户名称
-    private String des;
+    private String des; // 案例详情
     private String image;
     private Date createdTime;
 
