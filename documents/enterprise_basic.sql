@@ -1,0 +1,48 @@
+CREATE DATABASE IF NOT EXISTS enterprise_basic DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+
+use enterprise_basic;
+
+DROP TABLE IF EXISTS t_admin;
+CREATE TABLE t_admin(
+  id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '编号'
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
+
+DROP TABLE IF EXISTS t_news;
+CREATE TABLE t_news(
+  id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '编号',
+  access_token VARCHAR(500) COMMENT '用于微信网页端登录',
+  access_token1 VARCHAR(500) COMMENT '普通access_token',
+  openid VARCHAR(200) COMMENT 'openid',
+  unionid VARCHAR(200) COMMENT '联合id',
+  wechat_nickname VARCHAR(100) COMMENT '微信昵称',
+  headimg VARCHAR(500) COMMENT '头像地址',
+  wechat_no VARCHAR(100) COMMENT '微信号',
+  phone VARCHAR(11) COMMENT '手机号',
+  gender VARCHAR(2) COMMENT '性别',
+  payed_fee DOUBLE COMMENT '支付金额',
+  payed_time DATETIME COMMENT '支付时间',
+  payed_order int COMMENT '支付顺序',
+  trade_no VARCHAR(100) COMMENT '内部订单号',
+  tran_id VARCHAR(100) COMMENT '微信支付订单号',
+  prized int COMMENT '是否中奖'
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
+
+DROP TABLE IF EXISTS t_case;
+CREATE TABLE t_case(
+  id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '编号',
+  access_token VARCHAR(500) COMMENT '用于微信网页端登录',
+  access_token1 VARCHAR(500) COMMENT '普通access_token',
+  openid VARCHAR(200) COMMENT 'openid',
+  unionid VARCHAR(200) COMMENT '联合id',
+  wechat_nickname VARCHAR(100) COMMENT '微信昵称',
+  headimg VARCHAR(500) COMMENT '头像地址',
+  wechat_no VARCHAR(100) COMMENT '微信号',
+  phone VARCHAR(11) COMMENT '手机号',
+  gender VARCHAR(2) COMMENT '性别',
+  payed_fee DOUBLE COMMENT '支付金额',
+  payed_time DATETIME COMMENT '支付时间',
+  payed_order int COMMENT '支付顺序',
+  trade_no VARCHAR(100) COMMENT '内部订单号',
+  tran_id VARCHAR(100) COMMENT '微信支付订单号',
+  prized int COMMENT '是否中奖'
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;

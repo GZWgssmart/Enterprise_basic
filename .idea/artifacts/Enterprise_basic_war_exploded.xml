@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Enterprise_basic:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Enterprise_basic_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Enterprise_basic/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Enterprise_basic" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.34" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.3.2" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.42" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
