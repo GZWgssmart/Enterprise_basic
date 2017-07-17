@@ -4,45 +4,31 @@ use enterprise_basic;
 
 DROP TABLE IF EXISTS t_admin;
 CREATE TABLE t_admin(
-  id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '编号'
+  id varchar(36) NOT NULL COMMENT '编号',
+  name varchar(100) NOT NULL COMMENT '管理员姓名',
+  password varchar(500) NOT NULL COMMENT '管理员密码',
+  PRIMARY KEY (id)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
+
+INSERT INTO `t_admin` VALUES ('ad5d5660-6ac5-11e7-8543-d017c205bc97', 'admin', '123456');
 
 DROP TABLE IF EXISTS t_news;
 CREATE TABLE t_news(
-  id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '编号',
-  access_token VARCHAR(500) COMMENT '用于微信网页端登录',
-  access_token1 VARCHAR(500) COMMENT '普通access_token',
-  openid VARCHAR(200) COMMENT 'openid',
-  unionid VARCHAR(200) COMMENT '联合id',
-  wechat_nickname VARCHAR(100) COMMENT '微信昵称',
-  headimg VARCHAR(500) COMMENT '头像地址',
-  wechat_no VARCHAR(100) COMMENT '微信号',
-  phone VARCHAR(11) COMMENT '手机号',
-  gender VARCHAR(2) COMMENT '性别',
-  payed_fee DOUBLE COMMENT '支付金额',
-  payed_time DATETIME COMMENT '支付时间',
-  payed_order int COMMENT '支付顺序',
-  trade_no VARCHAR(100) COMMENT '内部订单号',
-  tran_id VARCHAR(100) COMMENT '微信支付订单号',
-  prized int COMMENT '是否中奖'
+  id varchar(36) NOT NULL COMMENT '编号',
+  title varchar(200) NOT NULL COMMENT '新闻标题',
+  des varchar(1500) NOT NULL COMMENT '新闻详情',
+  image varchar(500) NOT NULL COMMENT '新闻图片',
+  created_time datetime NOT NULL COMMENT '发布时间',
+  PRIMARY KEY (id)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
 DROP TABLE IF EXISTS t_case;
 CREATE TABLE t_case(
-  id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '编号',
-  access_token VARCHAR(500) COMMENT '用于微信网页端登录',
-  access_token1 VARCHAR(500) COMMENT '普通access_token',
-  openid VARCHAR(200) COMMENT 'openid',
-  unionid VARCHAR(200) COMMENT '联合id',
-  wechat_nickname VARCHAR(100) COMMENT '微信昵称',
-  headimg VARCHAR(500) COMMENT '头像地址',
-  wechat_no VARCHAR(100) COMMENT '微信号',
-  phone VARCHAR(11) COMMENT '手机号',
-  gender VARCHAR(2) COMMENT '性别',
-  payed_fee DOUBLE COMMENT '支付金额',
-  payed_time DATETIME COMMENT '支付时间',
-  payed_order int COMMENT '支付顺序',
-  trade_no VARCHAR(100) COMMENT '内部订单号',
-  tran_id VARCHAR(100) COMMENT '微信支付订单号',
-  prized int COMMENT '是否中奖'
+  id varchar(36) NOT NULL COMMENT '编号',
+  name varchar(100) NOT NULL COMMENT '案例名称',
+  customer varchar(100) NOT NULL COMMENT '客户名称',
+  des varchar(500) NOT NULL COMMENT '案例详情',
+  image varchar(500) NOT NULL COMMENT '案例图片',
+  created_time datetime NOT NULL COMMENT '发布时间',
+  PRIMARY KEY (id)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
