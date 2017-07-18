@@ -7,6 +7,7 @@ import com.gs.dao.AbstractBaseDAO;
 import com.gs.dao.AdminDAO;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -27,6 +28,28 @@ public class AdminDAOImpl extends AbstractBaseDAO implements AdminDAO {
             e.printStackTrace();
         }
         close();
+    }
+
+    public Admin queryByNamePwd(String name, String pwd) {
+        getConnection();
+        String sql = "select * from t_admin where name = ? and password = ?";
+        Admin a = null;
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, name);
+            preparedStatement.setString(2,EncryptUtil.md5Encrypt(pwd));
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if(resultSet.next()) {
+                a = new Admin();
+                a.setId(resultSet.getInt("id"));
+                a.setName(resultSet.getString("name"));
+                a.setPassword(resultSet.getString("password"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        close();
+        return a;
     }
 
     public void add(Admin admin) {

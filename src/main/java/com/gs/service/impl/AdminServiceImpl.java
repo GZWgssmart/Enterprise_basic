@@ -23,6 +23,10 @@ public class AdminServiceImpl implements AdminService {
         adminImpl.updatePwd(pk, pwd);
     }
 
+    public Admin queryByNamePwd(String name, String pwd) {
+        return adminImpl.queryByNamePwd(name,pwd);
+    }
+
     public void add(Admin admin) {
 
     }
