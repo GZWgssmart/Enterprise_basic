@@ -2,6 +2,7 @@ package com.gs.dao.impl;
 
 import com.gs.bean.Admin;
 import com.gs.common.bean.Pager;
+import com.gs.common.util.EncryptUtil;
 import com.gs.dao.AbstractBaseDAO;
 import com.gs.dao.AdminDAO;
 
@@ -19,7 +20,7 @@ public class AdminDAOImpl extends AbstractBaseDAO implements AdminDAO {
         String sql = "update t_admin set password = ? where id = ?";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setString(1,pwd);
+            preparedStatement.setString(1, EncryptUtil.md5Encrypt(pwd));
             preparedStatement.setInt(2,pk);
             preparedStatement.execute();
         } catch (SQLException e) {
