@@ -9,7 +9,7 @@ CREATE TABLE t_admin(
   password varchar(50) NOT NULL COMMENT '管理员密码'
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
-INSERT INTO `t_admin` VALUES ('ad5d5660-6ac5-11e7-8543-d017c205bc97', 'admin', '6khXbzC+FmmXFpnAmtBclA==');
+INSERT INTO `t_admin` VALUES ('1', 'admin', '6khXbzC+FmmXFpnAmtBclA==');
 
 DROP TABLE IF EXISTS t_news;
 CREATE TABLE t_news(

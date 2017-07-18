@@ -6,18 +6,18 @@ import java.util.Date;
  * Created by Wang Genshen on 2017-07-17.
  */
 public class Case {
-    private String id;
+    private int id;
     private String name;
     private String customer;// 客户名称
     private String content; // 案例详情
     private String image;
     private Date createdTime;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

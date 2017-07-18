@@ -6,18 +6,18 @@ import java.util.Date;
  * Created by Wang Genshen on 2017-07-17.
  */
 public class News {
-    private String id;
+    private int id;
     private String title;
     private String abstracts;
     private String content; // 新闻详情
     private String image;
     private Date createdTime;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
