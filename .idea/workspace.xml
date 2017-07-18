@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f81a4312-cc0c-4ce2-9ead-0df73dc71068" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/gs/controller/UploadServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/logo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/plugins/bootstrap/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/plugins/bootstrap/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/plugins/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/plugins/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/plugins/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/plugins/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/plugins/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/plugins/jquery-3.2.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/plugins/sweet-alert/sweet-alert.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/plugins/sweet-alert/sweet-alert.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documents/enterprise_basic.sql" afterPath="$PROJECT_DIR$/documents/enterprise_basic.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gs/bean/Case.java" afterPath="$PROJECT_DIR$/src/main/java/com/gs/bean/Case.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gs/bean/News.java" afterPath="$PROJECT_DIR$/src/main/java/com/gs/bean/News.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -101,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enterprise_basic.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="enterprise_basic.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/documents/enterprise_basic.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="363">
+              <caret line="11" column="104" lean-forward="false" selection-start-line="11" selection-start-column="104" selection-end-line="11" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -121,22 +110,85 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="News.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gs/bean/News.java">
+      <file leaf-file-name="Case.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gs/bean/Case.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="891">
+              <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+              <folding>
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="News.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gs/bean/News.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="759">
+              <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+              <folding>
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#699#700#0" expanded="true" />
+                <element signature="e#733#734#0" expanded="true" />
+                <element signature="e#763#764#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#847#848#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-495">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1500337314047" expanded="true" signature="91511:91553" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="91511:91571" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="91511:91584" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="91511:91599" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="91634:94303" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="91647:94288" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="91701:92102" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="91850:92067" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="91890:92033" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="91911:92011" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92152:92458" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92171:92443" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92245:92423" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92285:92389" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92306:92367" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92509:92825" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92528:92810" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92612:92790" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92652:92756" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92673:92734" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92868:93174" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92887:93159" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="92961:93139" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93001:93105" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93022:93083" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93225:93544" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93244:93529" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93331:93509" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93371:93475" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93392:93453" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93579:93885" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93598:93870" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93672:93850" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93712:93816" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93733:93794" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93937:94274" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="93956:94259" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="94061:94239" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="94101:94205" ph="..." />
+                <marker date="1500337314047" expanded="true" signature="94122:94183" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -173,8 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/gs/dao/impl/CaseDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/gs/dao/LeaveMessageDAO.java" />
         <option value="$PROJECT_DIR$/src/com/gs/service/NewsService.java" />
         <option value="$PROJECT_DIR$/src/com/gs/service/impl/NewsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/gs/service/CaseService.java" />
@@ -211,7 +261,6 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/views/admin/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/gs/controller/AdminServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gs/controller/NewsServlet.java" />
-        <option value="$PROJECT_DIR$/documents/enterprise_basic.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/gs/dao/BaseDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gs/service/BaseService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gs/service/impl/AdminServiceImpl.java" />
@@ -224,6 +273,9 @@
         <option value="$PROJECT_DIR$/web/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/gs/controller/UploadServlet.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gs/bean/Case.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gs/bean/News.java" />
+        <option value="$PROJECT_DIR$/documents/enterprise_basic.sql" />
       </list>
     </option>
   </component>
@@ -424,20 +476,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="documents" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Enterprise_basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Enterprise_basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -935,12 +973,12 @@
       <updated>1500272978480</updated>
       <workItem from="1500272982721" duration="5557000" />
       <workItem from="1500280577316" duration="158000" />
-      <workItem from="1500336831185" duration="66000" />
+      <workItem from="1500336831185" duration="510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5781000" />
+    <option name="totallyTimeSpent" value="6225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2586" height="1546" extended-state="6" />
@@ -966,9 +1004,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5787432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5787432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35072815" sideWeight="0.4968603" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30218446" sideWeight="0.4968603" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3390244" sideWeight="0.50313973" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1201,13 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gs/bean/Case.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gs/controller/CaseServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
@@ -1336,14 +1367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/documents/enterprise_basic.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1376,6 +1399,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1500337314047" expanded="true" signature="91511:91553" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="91511:91571" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="91511:91584" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="91511:91599" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="91634:94303" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="91647:94288" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="91701:92102" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="91850:92067" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="91890:92033" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="91911:92011" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92152:92458" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92171:92443" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92245:92423" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92285:92389" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92306:92367" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92509:92825" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92528:92810" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92612:92790" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92652:92756" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92673:92734" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92868:93174" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92887:93159" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="92961:93139" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93001:93105" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93022:93083" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93225:93544" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93244:93529" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93331:93509" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93371:93475" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93392:93453" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93579:93885" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93598:93870" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93672:93850" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93712:93816" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93733:93794" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93937:94274" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="93956:94259" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="94061:94239" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="94101:94205" ph="..." />
+            <marker date="1500337314047" expanded="true" signature="94122:94183" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gs/bean/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1384,18 +1456,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gs/bean/News.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gs/bean/Case.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="891">
+          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <folding>
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gs/bean/News.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="759">
+          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documents/enterprise_basic.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="104" lean-forward="false" selection-start-line="11" selection-start-column="104" selection-end-line="11" selection-end-column="104" />
           <folding />
         </state>
       </provider>

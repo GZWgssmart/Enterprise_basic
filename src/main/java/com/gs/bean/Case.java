@@ -9,7 +9,7 @@ public class Case {
     private String id;
     private String name;
     private String customer;// 客户名称
-    private String des; // 案例详情
+    private String content; // 案例详情
     private String image;
     private Date createdTime;
 
@@ -37,12 +37,12 @@ public class Case {
         this.customer = customer;
     }
 
-    public String getDes() {
-        return des;
+    public String getContent() {
+        return content;
     }
 
-    public void setDes(String des) {
-        this.des = des;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public String getImage() {

@@ -8,7 +8,8 @@ import java.util.Date;
 public class News {
     private String id;
     private String title;
-    private String des; // 新闻详情
+    private String abstracts;
+    private String content; // 新闻详情
     private String image;
     private Date createdTime;
 
@@ -28,12 +29,20 @@ public class News {
         this.title = title;
     }
 
-    public String getDes() {
-        return des;
+    public String getAbstracts() {
+        return abstracts;
     }
 
-    public void setDes(String des) {
-        this.des = des;
+    public void setAbstracts(String abstracts) {
+        this.abstracts = abstracts;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public String getImage() {
