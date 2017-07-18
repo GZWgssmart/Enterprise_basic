@@ -2,6 +2,8 @@ package com.gs.service.impl;
 
 import com.gs.bean.Admin;
 import com.gs.common.bean.Pager;
+import com.gs.dao.AdminDAO;
+import com.gs.dao.impl.AdminDAOImpl;
 import com.gs.service.AdminService;
 
 import java.util.List;
@@ -11,8 +13,14 @@ import java.util.List;
  */
 public class AdminServiceImpl implements AdminService {
 
-    public void updatePwd(Integer pk, String pwd) {
+    private AdminDAO adminImpl;
 
+    public AdminServiceImpl() {
+        adminImpl = new AdminDAOImpl();
+    }
+
+    public void updatePwd(Integer pk, String pwd) {
+        adminImpl.updatePwd(pk, pwd);
     }
 
     public void add(Admin admin) {
@@ -37,5 +45,9 @@ public class AdminServiceImpl implements AdminService {
 
     public List<Admin> queryByPager(Pager<Admin> pager) {
         return null;
+    }
+
+    public int count() {
+        return 0;
     }
 }

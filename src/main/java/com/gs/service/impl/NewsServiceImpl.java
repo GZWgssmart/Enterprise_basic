@@ -2,6 +2,8 @@ package com.gs.service.impl;
 
 import com.gs.bean.News;
 import com.gs.common.bean.Pager;
+import com.gs.dao.NewsDAO;
+import com.gs.dao.impl.NewsDAOImpl;
 import com.gs.service.NewsService;
 
 import java.util.List;
@@ -11,20 +13,26 @@ import java.util.List;
  */
 public class NewsServiceImpl implements NewsService {
 
-    public void add(News news) {
+    private NewsDAO newsImpl;
 
+    public NewsServiceImpl() {
+        newsImpl = new NewsDAOImpl();
+    }
+
+    public void add(News news) {
+        newsImpl.add(news);
     }
 
     public void update(News news) {
-
+        newsImpl.update(news);
     }
 
     public void remove(Integer integer) {
-
+        newsImpl.remove(integer);
     }
 
     public News queryById(Integer integer) {
-        return null;
+        return newsImpl.queryById(integer);
     }
 
     public List<News> queryAll() {
@@ -32,6 +40,10 @@ public class NewsServiceImpl implements NewsService {
     }
 
     public List<News> queryByPager(Pager<News> pager) {
-        return null;
+        return newsImpl.queryByPager(pager);
+    }
+
+    public int count() {
+        return newsImpl.count();
     }
 }

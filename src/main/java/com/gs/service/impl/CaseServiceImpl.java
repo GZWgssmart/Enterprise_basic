@@ -11,20 +11,26 @@ import java.util.List;
  */
 public class CaseServiceImpl implements CaseService {
 
-    public void add(Case aCase) {
+    private CaseService caseImpl;
 
+    public CaseServiceImpl() {
+        caseImpl = new CaseServiceImpl();
+    }
+
+    public void add(Case aCase) {
+        caseImpl.add(aCase);
     }
 
     public void update(Case aCase) {
-
+        caseImpl.update(aCase);
     }
 
     public void remove(Integer integer) {
-
+        caseImpl.remove(integer);
     }
 
     public Case queryById(Integer integer) {
-        return null;
+        return caseImpl.queryById(integer);
     }
 
     public List<Case> queryAll() {
@@ -32,6 +38,10 @@ public class CaseServiceImpl implements CaseService {
     }
 
     public List<Case> queryByPager(Pager<Case> pager) {
-        return null;
+        return caseImpl.queryByPager(pager);
+    }
+
+    public int count() {
+        return caseImpl.count();
     }
 }
