@@ -3,6 +3,7 @@ package com.gs.controller;
 import com.alibaba.fastjson.JSON;
 import com.gs.bean.Admin;
 import com.gs.bean.Case;
+import com.gs.common.Constants;
 import com.gs.common.WebUtil;
 import com.gs.common.bean.Pager;
 import com.gs.common.util.FileUtil;
@@ -32,7 +33,6 @@ import java.util.Map;
 @WebServlet(name = "CaseServlet", urlPatterns = "/case/*")
 public class CaseServlet extends HttpServlet {
     private static final long serialVersionUID = 2580077429082764753L;
-    private static final int PAGESIZE = 20;
 
     private CaseService caseImpl;
 
@@ -262,7 +262,7 @@ public class CaseServlet extends HttpServlet {
     private void listCommon(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException  {
         int total = caseImpl.count();
-        int pageCount = total % PAGESIZE == 0 ? total / PAGESIZE : total / PAGESIZE + 1 ;// 总页数
+        int pageCount = total % Constants.PAGESIZE == 0 ? total / Constants.PAGESIZE : total / Constants.PAGESIZE + 1 ;// 总页数
         String pageStr = req.getParameter("page");
         int page = 1;
         if(pageStr != null) {
@@ -274,7 +274,7 @@ public class CaseServlet extends HttpServlet {
             }
         }
         Pager<Case> pager = new Pager<Case>();
-        pager.setPageSize(PAGESIZE);
+        pager.setPageSize(Constants.PAGESIZE);
         pager.setPage(page);
         List<Case> caseList = caseImpl.queryByPager(pager);
         pager.setResults(caseList);
