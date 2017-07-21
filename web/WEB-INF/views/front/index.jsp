@@ -107,7 +107,7 @@
 
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <h4>
-          <span style="font-weight: bold;">客户案例</span>
+          <span style="font-weight: bold;">成功案例</span>
           <a href="#" class="pull-right">更多案例...</a>
         </h4>
 
