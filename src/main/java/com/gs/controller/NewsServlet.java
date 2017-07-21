@@ -84,6 +84,7 @@ public class NewsServlet extends HttpServlet {
     private void list(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         listCommon(req,resp);
+        req.setAttribute(Constants.CURRENT_PAGE, "news");
         req.getRequestDispatcher("/WEB-INF/views/front/news_list.jsp").forward(req, resp);
     }
 

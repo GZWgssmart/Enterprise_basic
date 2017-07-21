@@ -90,6 +90,7 @@ public class CaseServlet extends HttpServlet {
     private void list(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         listCommon(req,resp);
+        req.setAttribute(Constants.CURRENT_PAGE, "case");
         req.getRequestDispatcher("/WEB-INF/views/front/case_list.jsp").forward(req, resp);
     }
 
