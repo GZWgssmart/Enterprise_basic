@@ -34,10 +34,10 @@ import java.util.Map;
 public class CaseServlet extends HttpServlet {
     private static final long serialVersionUID = 2580077429082764753L;
 
-    private CaseService caseImpl;
+    private CaseService caseServiceImpl;
 
     public CaseServlet() {
-        caseImpl = new CaseServiceImpl();
+        caseServiceImpl = new CaseServiceImpl();
     }
 
     @Override
@@ -83,22 +83,26 @@ public class CaseServlet extends HttpServlet {
      */
     private void detail(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        this.detailCommon(req,resp);
+        detailCommon(req,resp);
+        req.getRequestDispatcher("/WEB-INF/views/front/case.jsp").forward(req, resp);
     }
 
     private void list(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        this.listCommon(req,resp);
+        listCommon(req,resp);
+        req.getRequestDispatcher("/WEB-INF/views/front/case_list.jsp").forward(req, resp);
     }
 
     private void adminDetail(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        this.detailCommon(req,resp);
+        detailCommon(req,resp);
+        req.getRequestDispatcher("/WEB-INF/views/case/case.jsp").forward(req, resp);
     }
 
     private void adminList(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        this.listCommon(req,resp);
+        listCommon(req,resp);
+        req.getRequestDispatcher("/WEB-INF/views/case/case_list.jsp").forward(req, resp);
     }
 
     private void remove(HttpServletRequest req, HttpServletResponse resp)
@@ -108,7 +112,7 @@ public class CaseServlet extends HttpServlet {
         String idStr = req.getParameter("id");
         if(idStr != null) {
             int id = Integer.valueOf(idStr);
-            caseImpl.remove(id);
+            caseServiceImpl.remove(id);
             map.put("error", "删除成功");
             out.write(JSON.toJSONString(map));
         } else {
@@ -163,11 +167,11 @@ public class CaseServlet extends HttpServlet {
                         }
                     }
                 }
-                Case aCase = caseImpl.queryById(cases.getId());// 如果没有选择图片，则用使用之前的图片
+                Case aCase = caseServiceImpl.queryById(cases.getId());// 如果没有选择图片，则用使用之前的图片
                 if (cases.getImage() == null) {
                     cases.setImage(aCase.getImage());
                 }
-                caseImpl.update(cases);
+                caseServiceImpl.update(cases);
                 resp.setContentType("json");
                 map.put("error", "修改成功");
                 out.write(JSON.toJSONString(map));
@@ -223,7 +227,7 @@ public class CaseServlet extends HttpServlet {
                         }
                     }
                 }
-                caseImpl.add(cases);
+                caseServiceImpl.add(cases);
                 resp.setContentType("json");
                 map.put("error", "添加成功");
                 out.write(JSON.toJSONString(map));
@@ -247,7 +251,7 @@ public class CaseServlet extends HttpServlet {
         String idStr = req.getParameter("id");
         if(idStr != null) {
             int id = Integer.valueOf(idStr);
-            Case aCase = caseImpl.queryById(id);
+            Case aCase = caseServiceImpl.queryById(id);
             req.setAttribute("case",aCase);
         }
     }
@@ -261,7 +265,7 @@ public class CaseServlet extends HttpServlet {
      */
     private void listCommon(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException  {
-        int total = caseImpl.count();
+        int total = caseServiceImpl.count();
         int pageCount = total % Constants.PAGESIZE == 0 ? total / Constants.PAGESIZE : total / Constants.PAGESIZE + 1 ;// 总页数
         String pageStr = req.getParameter("page");
         int page = 1;
@@ -276,7 +280,7 @@ public class CaseServlet extends HttpServlet {
         Pager<Case> pager = new Pager<Case>();
         pager.setPageSize(Constants.PAGESIZE);
         pager.setPage(page);
-        List<Case> caseList = caseImpl.queryByPager(pager);
+        List<Case> caseList = caseServiceImpl.queryByPager(pager);
         pager.setResults(caseList);
         pager.setTotal(total);
         req.setAttribute("pager",pager);
