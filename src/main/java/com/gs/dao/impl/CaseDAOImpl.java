@@ -95,7 +95,7 @@ public class CaseDAOImpl extends AbstractBaseDAO implements CaseDAO {
 
     public List<Case> queryByPager(Pager<Case> pager) {
         getConnection();
-        String sql = "select * from t_case order by created_time limit ?,? desc";
+        String sql = "select * from t_case order by created_time desc limit ?,?";
         List<Case> caseList = new ArrayList<Case>();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);

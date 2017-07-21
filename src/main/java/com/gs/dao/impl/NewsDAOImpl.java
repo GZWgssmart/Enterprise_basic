@@ -95,7 +95,7 @@ public class NewsDAOImpl extends AbstractBaseDAO implements NewsDAO {
 
     public List<News> queryByPager(Pager<News> pager) {
         getConnection();
-        String sql = "select * from t_news order by created_time limit ?,? desc";
+        String sql = "select * from t_news order by created_time desc limit ?,?";
         List<News> newsList = new ArrayList<News>();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
