@@ -2,6 +2,8 @@ package com.gs.service.impl;
 
 import com.gs.bean.Case;
 import com.gs.common.bean.Pager;
+import com.gs.dao.CaseDAO;
+import com.gs.dao.impl.CaseDAOImpl;
 import com.gs.service.CaseService;
 
 import java.util.List;
@@ -11,26 +13,26 @@ import java.util.List;
  */
 public class CaseServiceImpl implements CaseService {
 
-    private CaseService caseImpl;
+    private CaseDAO caseDAO;
 
     public CaseServiceImpl() {
-        caseImpl = new CaseServiceImpl();
+        caseDAO = new CaseDAOImpl();
     }
 
     public void add(Case aCase) {
-        caseImpl.add(aCase);
+        caseDAO.add(aCase);
     }
 
     public void update(Case aCase) {
-        caseImpl.update(aCase);
+        caseDAO.update(aCase);
     }
 
     public void remove(Integer integer) {
-        caseImpl.remove(integer);
+        caseDAO.remove(integer);
     }
 
     public Case queryById(Integer integer) {
-        return caseImpl.queryById(integer);
+        return caseDAO.queryById(integer);
     }
 
     public List<Case> queryAll() {
@@ -38,10 +40,10 @@ public class CaseServiceImpl implements CaseService {
     }
 
     public List<Case> queryByPager(Pager<Case> pager) {
-        return caseImpl.queryByPager(pager);
+        return caseDAO.queryByPager(pager);
     }
 
     public int count() {
-        return caseImpl.count();
+        return caseDAO.count();
     }
 }

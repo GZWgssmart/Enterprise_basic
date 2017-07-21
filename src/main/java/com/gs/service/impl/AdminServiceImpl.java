@@ -13,18 +13,18 @@ import java.util.List;
  */
 public class AdminServiceImpl implements AdminService {
 
-    private AdminDAO adminImpl;
+    private AdminDAO adminDAO;
 
     public AdminServiceImpl() {
-        adminImpl = new AdminDAOImpl();
+        adminDAO = new AdminDAOImpl();
     }
 
     public void updatePwd(Integer pk, String pwd) {
-        adminImpl.updatePwd(pk, pwd);
+        adminDAO.updatePwd(pk, pwd);
     }
 
     public Admin queryByNamePwd(String name, String pwd) {
-        return adminImpl.queryByNamePwd(name,pwd);
+        return adminDAO.queryByNamePwd(name,pwd);
     }
 
     public void add(Admin admin) {

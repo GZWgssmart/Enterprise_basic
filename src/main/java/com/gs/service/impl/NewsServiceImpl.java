@@ -13,26 +13,26 @@ import java.util.List;
  */
 public class NewsServiceImpl implements NewsService {
 
-    private NewsDAO newsImpl;
+    private NewsDAO newsDAO;
 
     public NewsServiceImpl() {
-        newsImpl = new NewsDAOImpl();
+        newsDAO = new NewsDAOImpl();
     }
 
     public void add(News news) {
-        newsImpl.add(news);
+        newsDAO.add(news);
     }
 
     public void update(News news) {
-        newsImpl.update(news);
+        newsDAO.update(news);
     }
 
     public void remove(Integer integer) {
-        newsImpl.remove(integer);
+        newsDAO.remove(integer);
     }
 
     public News queryById(Integer integer) {
-        return newsImpl.queryById(integer);
+        return newsDAO.queryById(integer);
     }
 
     public List<News> queryAll() {
@@ -40,10 +40,10 @@ public class NewsServiceImpl implements NewsService {
     }
 
     public List<News> queryByPager(Pager<News> pager) {
-        return newsImpl.queryByPager(pager);
+        return newsDAO.queryByPager(pager);
     }
 
     public int count() {
-        return newsImpl.count();
+        return newsDAO.count();
     }
 }
