@@ -157,7 +157,7 @@ public class NewsServlet extends HttpServlet {
                         String name = item.getFieldName();
                         if (name.equals("image")) {
                             FileUtil.save(req, item);
-                            news.setImage("images/" + item.getName());
+                            news.setImage("uploads/" + item.getName());
                         }
                     }
                 }
@@ -217,7 +217,7 @@ public class NewsServlet extends HttpServlet {
                         String name = item.getFieldName();
                         if (name.equals("image")) {
                             FileUtil.save(req, item);
-                            news.setImage("images/" + item.getName());
+                            news.setImage("uploads/" + item.getName());
                         }
                     }
                 }

@@ -17,7 +17,7 @@ public class FileUtil {
 	
 	public static String mkUpload(HttpServletRequest req) {
 		String path = req.getServletContext().getRealPath("/");
-		File file = new File(path, "images");
+		File file = new File(path, "uploads");
 		if (!file.exists()) {
 			file.mkdir();
 		}

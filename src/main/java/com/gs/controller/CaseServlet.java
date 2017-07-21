@@ -163,7 +163,7 @@ public class CaseServlet extends HttpServlet {
                         String name = item.getFieldName();
                         if (name.equals("image")) {
                             FileUtil.save(req, item);
-                            cases.setImage("images/" + item.getName());
+                            cases.setImage("uploads/" + item.getName());
                         }
                     }
                 }
@@ -223,7 +223,7 @@ public class CaseServlet extends HttpServlet {
                         String name = item.getFieldName();
                         if (name.equals("image")) {
                             FileUtil.save(req, item);
-                            cases.setImage("images/" + item.getName());
+                            cases.setImage("uploads/" + item.getName());
                         }
                     }
                 }
