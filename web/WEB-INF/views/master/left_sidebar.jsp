@@ -11,7 +11,7 @@
         <a href="<%=path %>/service/trademark_reg" class="list-group-item <c:if test='${requestScope.page == "trademark_reg"}'>active</c:if>">商标注册</a>
         <a href="<%=path %>/service/license" class="list-group-item <c:if test='${requestScope.page == "license"}'>active</c:if>">食品流通许可证</a>
         <a href="<%=path %>/service/identified" class="list-group-item <c:if test='${requestScope.page == "identified"}'>active</c:if>">一般纳税人认定</a>
-        <a href="<%=path %>/service/trademark_reg" class="list-group-item <c:if test='${requestScope.page == "trademark_reg"}'>active</c:if>">餐饮服务许可证</a>
+        <a href="<%=path %>/service/service_permit" class="list-group-item <c:if test='${requestScope.page == "service_permit"}'>active</c:if>">餐饮服务许可证</a>
     </div>
 </div>
 
