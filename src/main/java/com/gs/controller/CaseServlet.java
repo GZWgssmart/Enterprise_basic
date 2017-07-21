@@ -52,7 +52,7 @@ public class CaseServlet extends HttpServlet {
             HttpSession session = req.getSession();
             Admin adm = (Admin) session.getAttribute("admin");
             if (adm == null) {
-//                resp.sendRedirect("login_page");// TODO 转到主页
+                resp.sendRedirect("../front/index");
             } else {
                 if (method.equals("add_page")) {
                     showAddPage(req, resp);
