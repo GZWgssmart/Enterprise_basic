@@ -16,6 +16,8 @@ public final class Constants {
 
     public static final String LOGO_IMG = "logo_img";
 
+    public static final String CURRENT_PAGE = "page";
+
     public static final int PAGESIZE = 20;
 
 }

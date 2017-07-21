@@ -1,5 +1,6 @@
 package com.gs.controller;
 
+import com.gs.common.Constants;
 import com.gs.common.WebUtil;
 
 import javax.servlet.ServletException;
@@ -19,7 +20,9 @@ public class FrontServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String method = WebUtil.getReqMethod(req);
-        if (method.equals("about")) {
+        if (method.equals("index")) {
+            showIndexPage(req, resp);
+        } else if (method.equals("about")) {
             showAboutPage(req, resp);
         } else if (method.equals("service")) {
             showServicePage(req, resp);
@@ -28,15 +31,23 @@ public class FrontServlet extends HttpServlet {
         }
     }
 
+    private void showIndexPage(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute(Constants.CURRENT_PAGE, "index");
+        req.getRequestDispatcher("/WEB-INF/views/front/index.jsp").forward(req, resp);
+    }
+
     private void showContactPage(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute(Constants.CURRENT_PAGE, "contact");
         req.getRequestDispatcher("/WEB-INF/views/front/contact.jsp").forward(req, resp);
     }
 
     private void showServicePage(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute(Constants.CURRENT_PAGE, "service");
         req.getRequestDispatcher("/WEB-INF/views/front/services.jsp").forward(req, resp);
     }
 
     private void showAboutPage(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute(Constants.CURRENT_PAGE, "about");
         req.getRequestDispatcher("/WEB-INF/views/front/about.jsp").forward(req, resp);
     }
 }
