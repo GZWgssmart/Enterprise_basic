@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
     <div class="list-group">
-        <a href="javascript:void(0);" class="list-group-item active">服务项目</a>
+        <a href="javascript:void(0);" class="list-group-item" style="font-size:16px;font-weight:bold;">服务项目</a>
         <a href="<%=path %>/service/comreg" class="list-group-item">公司注册</a>
         <a class="list-group-item">代理记账</a>
         <a class="list-group-item">乱账整理</a>
