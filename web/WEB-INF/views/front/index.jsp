@@ -49,6 +49,117 @@
       </div>
 
     </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h4>
+          <span style="font-weight: bold;">新闻资讯</span>
+          <a href="#" class="pull-right">更多新闻...</a>
+        </h4>
+
+        <div class="row" style="margin-bottom: 15px;">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <p>新闻标题</p>
+            <small>新闻摘要</small>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 15px;">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <p>新闻标题</p>
+            <small>新闻摘要</small>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 15px;">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <p>新闻标题</p>
+            <small>新闻摘要</small>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 15px;">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <p>新闻标题</p>
+            <small>新闻摘要</small>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 15px;">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <p>新闻标题</p>
+            <small>新闻摘要</small>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h4>
+          <span style="font-weight: bold;">客户案例</span>
+          <a href="#" class="pull-right">更多案例...</a>
+        </h4>
+
+        <div class="row" style="margin-bottom: 15px;">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <p>公司名称</p>
+            <small>案例介绍</small>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 15px;">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <p>公司名称</p>
+            <small>案例介绍</small>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 15px;">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <p>公司名称</p>
+            <small>案例介绍</small>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 15px;">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <p>公司名称</p>
+            <small>案例介绍</small>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 15px;">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <p>公司名称</p>
+            <small>案例介绍</small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 
   <%@include file="../master/footer.jsp"%>

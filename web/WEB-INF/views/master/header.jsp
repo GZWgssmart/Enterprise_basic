@@ -17,10 +17,10 @@
                     <a href="<%=path %>/">主页</a>
                 </li>
                 <li <c:if test="${requestScope.page == 'news'}">class="active"</c:if>>
-                    <a href="#about">新闻资讯</a>
+                    <a href="<%=path %>/news/list">新闻资讯</a>
                 </li>
                 <li <c:if test="${requestScope.page == 'case'}">class="active"</c:if>>
-                    <a href="#contact">成功案例</a>
+                    <a href="<%=path %>/case/list">成功案例</a>
                 </li>
                 <li <c:if test="${requestScope.page == 'service'}">class="active"</c:if>>
                     <a href="<%=path %>/front/service">服务项目</a>
