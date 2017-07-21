@@ -24,10 +24,10 @@ public class AdminServlet extends HttpServlet {
 
     private static final long serialVersionUID = 4186956681993096312L;
 
-    private AdminServiceImpl admImpl;
+    private AdminServiceImpl admServiceImpl;
 
     public AdminServlet() {
-        admImpl = new AdminServiceImpl();
+        admServiceImpl = new AdminServiceImpl();
     }
 
     @Override
@@ -75,7 +75,7 @@ public class AdminServlet extends HttpServlet {
             out.write(JSON.toJSONString(map));
             return;
         }
-        Admin adm = admImpl.queryByNamePwd(name, pwd);
+        Admin adm = admServiceImpl.queryByNamePwd(name, pwd);
         if(adm == null) {
             map.put("error","登录名密码输入错误！");
             out.write(JSON.toJSONString(map));
@@ -113,15 +113,15 @@ public class AdminServlet extends HttpServlet {
             out.write(JSON.toJSONString(map));
             return;
         }
-        Admin adm = admImpl.queryByNamePwd(name, pwd);
+        Admin adm = admServiceImpl.queryByNamePwd(name, pwd);
         if(adm == null) {
             map.put("error","原密码输入错误！");
             out.write(JSON.toJSONString(map));
             return;
         }
         int id = Integer.valueOf(idStr);
-        admImpl.updatePwd(id,pwdConfirm);
-        adm = admImpl.queryById(id);
+        admServiceImpl.updatePwd(id,pwdConfirm);
+        adm = admServiceImpl.queryById(id);
         HttpSession session = req.getSession();
         session.setAttribute("admin", adm);
         // 修改成功，转到个人中心
@@ -131,7 +131,7 @@ public class AdminServlet extends HttpServlet {
 
     private void showUpdatePage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/views/front/upload_pwd.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/views/admin/upload_pwd.jsp").forward(req, resp);
     }
 
     private void showLoginPage(HttpServletRequest req, HttpServletResponse resp)
