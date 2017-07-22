@@ -16,7 +16,7 @@
   <%@include file="../master/header.jsp"%>
 
   <div class="container">
-    <div class="row">
+    <div class="row" style="margin-top: 20px;">
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div class="thumbnail">
           <img src="<%=path %>/images/company.jpg" alt="公司注册" class="img-responsive img-rounded">
