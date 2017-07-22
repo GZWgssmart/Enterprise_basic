@@ -9,4 +9,9 @@
 <script src="<%=path %>/plugins/jquery-3.2.1.min.js"></script>
 <script src="<%=path %>/plugins/bootstrap/bootstrap.min.js"></script>
 <script src="<%=path %>/plugins/sweet-alert/sweet-alert.min.js"></script>
+<script src="<%=path %>/plugins/offcanvas/offcanvas.js"></script>
+<!--[if lt IE 9]>
+<script src="<%=path %>/plugins/html5shiv.min.js"></script>
+<script src="<%=path %>/plugins/respond.min.js"></script>
+<![endif]-->
 <script src="<%=path %>/js/main.js"></script>

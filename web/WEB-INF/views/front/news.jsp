@@ -29,8 +29,10 @@
             </p>
         </div>
     </div>
+
+    <%@include file="../master/footer.jsp"%>
 </div>
-<%@include file="../master/footer.jsp"%>
+
 </body>
 <%@include file="../master/script.inc.jsp"%>
 </html>

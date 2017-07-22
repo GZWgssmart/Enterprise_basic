@@ -16,4 +16,5 @@
 <meta name="description" content="赣州市百友情汇企业服务有限公司是一家专业的公司注册，财务管理，商标注册的企业综合服务公司" />
 <link href="<%=path %>/plugins/bootstrap/bootstrap.min.css" rel="stylesheet"/>
 <link href="<%=path %>/plugins/sweet-alert/sweet-alert.css" rel="stylesheet"/>
+<link href="<%=path %>/plugins/offcanvas/offcanvas.css" rel="stylesheet"/>
 <link href="<%=path %>/css/main.css" rel="stylesheet" />

@@ -15,17 +15,22 @@
 <body>
 <%@include file="../master/header.jsp"%>
 <div class="container">
-    <div class="row" style="margin-top: 20px;">
-        <%@include file="../master/left_sidebar.jsp"%>
-        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-            <h3>餐饮服务许可证</h3>
-            <p>
-                餐饮服务许可证详情
-            </p>
+    <div class="row-offcanvas row-offcanvas-left" style="margin-top: 20px;">
+        <div class="row">
+            <%@include file="../master/left_sidebar_canvas.jsp"%>
+            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 ">
+                <p class="visible-xs">
+                    <button type="button" class="btn btn-default btn-xs" data-toggle="offcanvas">所有服务</button>
+                </p>
+                <h3>餐饮服务许可证</h3>
+                <p>
+                    餐饮服务许可证详情
+                </p>
+            </div>
         </div>
+        <%@include file="../master/footer.jsp"%>
     </div>
 </div>
-<%@include file="../master/footer.jsp"%>
 </body>
 <%@include file="../master/script.inc.jsp"%>
 </html>
