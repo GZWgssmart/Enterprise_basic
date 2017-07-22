@@ -122,9 +122,8 @@ public class AdminServlet extends HttpServlet {
         }
         int id = Integer.valueOf(idStr);
         admServiceImpl.updatePwd(id,pwdConfirm);
-        adm = admServiceImpl.queryById(id);
         HttpSession session = req.getSession();
-        session.setAttribute("admin", adm);
+        session.removeAttribute("admin");
         // 修改成功，转到个人中心
         map.put("error","修改成功");
         out.write(JSON.toJSONString(map));
@@ -133,7 +132,7 @@ public class AdminServlet extends HttpServlet {
     private void showUpdatePage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "pwd");
-        req.getRequestDispatcher("/WEB-INF/views/admin/upload_pwd.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/views/admin/update_pwd.jsp").forward(req, resp);
     }
 
     private void showLoginPage(HttpServletRequest req, HttpServletResponse resp)
