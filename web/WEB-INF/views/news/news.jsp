@@ -31,8 +31,8 @@
             <a class="btn btn-primary" href="#">编辑</a>
         </div>
     </div>
+    <%@include file="../master/footer.jsp"%>
 </div>
-<%@include file="../master/footer.jsp"%>
 </body>
 <%@include file="../master/script.inc.jsp"%>
 </html>

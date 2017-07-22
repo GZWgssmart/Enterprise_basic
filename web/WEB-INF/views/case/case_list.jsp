@@ -34,9 +34,8 @@
                     </div>
                 </div>
             </a>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <a class="btn btn-primary" href="#">编辑</a>
-            </div>
+            <a href="btn btn-default">编辑</a>
+            <a href="btn btn-default">删除</a>
             <hr />
 
             <a href="#">
@@ -53,9 +52,8 @@
                     </div>
                 </div>
             </a>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <a class="btn btn-primary" href="#">编辑</a>
-            </div>
+            <a href="btn btn-default">编辑</a>
+            <a href="btn btn-default">删除</a>
             <hr />
 
             <a href="#">
@@ -72,9 +70,8 @@
                     </div>
                 </div>
             </a>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <a class="btn btn-primary" href="#">编辑</a>
-            </div>
+            <a href="btn btn-default">编辑</a>
+            <a href="btn btn-default">删除</a>
             <hr />
 
             <div class="row">
@@ -88,8 +85,9 @@
 
         </div>
     </div>
+    <%@include file="../master/footer.jsp"%>
 </div>
-<%@include file="../master/footer.jsp"%>
+
 </body>
 <%@include file="../master/script.inc.jsp"%>
 </html>
