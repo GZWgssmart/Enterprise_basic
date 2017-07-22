@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>****有限公司</title>
+    <title>赣州市百友汇企业服务有限公司</title>
     <%@include file="../master/style.inc.jsp"%>
   </head>
   <body>
