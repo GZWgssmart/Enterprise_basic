@@ -17,3 +17,7 @@ function checkFile(name, index, type, size) {
     }
     return true;
 }
+
+function login() {
+
+}
