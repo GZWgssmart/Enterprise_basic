@@ -18,7 +18,18 @@
     <div class="row" style="margin-top: 20px;">
         <%@include file="../master/admin_left_sidebar.jsp"%>
         <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-            案例详情
+            <h3 class="text-center">案例名称</h3>
+            <p class="text-center">发布时间</p>
+            <p>案例简介</p>
+            <p>
+                <img src="<%=path %>/images/logo.jpg" class="img-responsive" />
+            </p>
+            <p>
+                案例详情
+            </p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a class="btn btn-primary" href="#">编辑</a>
         </div>
     </div>
 </div>
