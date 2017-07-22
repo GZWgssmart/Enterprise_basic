@@ -53,7 +53,7 @@ public class ServiceServlet extends HttpServlet {
      */
     private void showSortOutPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException  {
-        req.setAttribute(Constants.CURRENT_PAGE, "sort_out");
+        req.setAttribute(Constants.CURRENT_SERVICE_PAGE, "sort_out");
         req.getRequestDispatcher("/WEB-INF/views/service/account_sort_out.jsp").forward(req, resp);
     }
 
@@ -66,7 +66,7 @@ public class ServiceServlet extends HttpServlet {
      */
     private void showComregPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        req.setAttribute(Constants.CURRENT_PAGE, "comreg");
+        req.setAttribute(Constants.CURRENT_SERVICE_PAGE, "comreg");
         req.getRequestDispatcher("/WEB-INF/views/service/comreg.jsp").forward(req, resp);
     }
 
@@ -79,7 +79,7 @@ public class ServiceServlet extends HttpServlet {
      */
     private void showBookkepingPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException  {
-        req.setAttribute(Constants.CURRENT_PAGE, "bookkeep");
+        req.setAttribute(Constants.CURRENT_SERVICE_PAGE, "bookkeep");
         req.getRequestDispatcher("/WEB-INF/views/service/bookkeeping.jsp").forward(req, resp);
     }
 
@@ -92,7 +92,7 @@ public class ServiceServlet extends HttpServlet {
      */
     private void showComChangePage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        req.setAttribute(Constants.CURRENT_PAGE, "com_change");
+        req.setAttribute(Constants.CURRENT_SERVICE_PAGE, "com_change");
         req.getRequestDispatcher("/WEB-INF/views/service/business_change.jsp").forward(req, resp);
     }
 
@@ -105,7 +105,7 @@ public class ServiceServlet extends HttpServlet {
      */
     private void showComCancalPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException  {
-        req.setAttribute(Constants.CURRENT_PAGE, "com_cancal");
+        req.setAttribute(Constants.CURRENT_SERVICE_PAGE, "com_cancal");
         req.getRequestDispatcher("/WEB-INF/views/service/company_canceled.jsp").forward(req, resp);
     }
 
@@ -118,7 +118,7 @@ public class ServiceServlet extends HttpServlet {
      */
     private void showLicensePage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        req.setAttribute(Constants.CURRENT_PAGE, "license");
+        req.setAttribute(Constants.CURRENT_SERVICE_PAGE, "license");
         req.getRequestDispatcher("/WEB-INF/views/service/food_distribution_license.jsp").forward(req, resp);
     }
 
@@ -131,7 +131,7 @@ public class ServiceServlet extends HttpServlet {
      */
     private void showServicePermitPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException  {
-        req.setAttribute(Constants.CURRENT_PAGE, "service_permit");
+        req.setAttribute(Constants.CURRENT_SERVICE_PAGE, "service_permit");
         req.getRequestDispatcher("/WEB-INF/views/service/food_service_permit.jsp").forward(req, resp);
     }
 
@@ -144,7 +144,7 @@ public class ServiceServlet extends HttpServlet {
      */
     private void showRecognitionPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        req.setAttribute(Constants.CURRENT_PAGE, "recognition");
+        req.setAttribute(Constants.CURRENT_SERVICE_PAGE, "recognition");
         req.getRequestDispatcher("/WEB-INF/views/service/import_rights_recognition.jsp").forward(req, resp);
     }
 
@@ -157,7 +157,7 @@ public class ServiceServlet extends HttpServlet {
      */
     private void showIdentifiedPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException  {
-        req.setAttribute(Constants.CURRENT_PAGE, "identified");
+        req.setAttribute(Constants.CURRENT_SERVICE_PAGE, "identified");
         req.getRequestDispatcher("/WEB-INF/views/service/taxpayer_identified.jsp").forward(req, resp);
     }
 
@@ -170,7 +170,7 @@ public class ServiceServlet extends HttpServlet {
      */
     private void showTrademarkRegPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        req.setAttribute(Constants.CURRENT_PAGE, "trademark_reg");
+        req.setAttribute(Constants.CURRENT_SERVICE_PAGE, "trademark_reg");
         req.getRequestDispatcher("/WEB-INF/views/service/trademark_reg.jsp").forward(req, resp);
     }
 

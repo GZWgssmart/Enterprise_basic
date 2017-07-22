@@ -18,6 +18,10 @@ public final class Constants {
 
     public static final String CURRENT_PAGE = "page";
 
+    public static final String CURRENT_SERVICE_PAGE = "service_page";
+
+    public static final String CURREANT_ADMIN_PAGE = "admin_page";
+
     public static final int PAGESIZE = 20;
 
 }

@@ -14,6 +14,17 @@
 </head>
 <body>
 <%@include file="../master/header.jsp"%>
+<div class="container">
+    <div class="row" style="margin-top: 20px;">
+        <%@include file="../master/left_sidebar.jsp"%>
+        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+            <h3>联系我们</h3>
+            <p>
+                地址，手机号，地图等
+            </p>
+        </div>
+    </div>
+</div>
 <%@include file="../master/footer.jsp"%>
 </body>
 <%@include file="../master/script.inc.jsp"%>

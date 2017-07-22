@@ -2,6 +2,7 @@ package com.gs.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.gs.bean.Admin;
+import com.gs.common.Constants;
 import com.gs.common.WebUtil;
 import com.gs.service.impl.AdminServiceImpl;
 
@@ -131,6 +132,7 @@ public class AdminServlet extends HttpServlet {
 
     private void showUpdatePage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
+        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "pwd");
         req.getRequestDispatcher("/WEB-INF/views/admin/upload_pwd.jsp").forward(req, resp);
     }
 

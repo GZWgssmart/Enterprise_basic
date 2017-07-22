@@ -91,12 +91,14 @@ public class NewsServlet extends HttpServlet {
     private void adminDetail(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         detailCommon(req,resp);
+        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "news");
         req.getRequestDispatcher("/WEB-INF/views/news/news.jsp").forward(req, resp);
     }
 
     private void adminList(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         listCommon(req,resp);
+        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "news");
         req.getRequestDispatcher("/WEB-INF/views/news/news_list.jsp").forward(req, resp);
     }
 
@@ -283,11 +285,13 @@ public class NewsServlet extends HttpServlet {
 
     private void showEditPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
+        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "news");
         req.getRequestDispatcher("/WEB-INF/views/news/edit_news.jsp").forward(req, resp);
     }
 
     private void showAddPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
+        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "news");
         req.getRequestDispatcher("/WEB-INF/views/news/add_news.jsp").forward(req, resp);
     }
 }

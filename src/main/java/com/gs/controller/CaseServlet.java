@@ -97,12 +97,14 @@ public class CaseServlet extends HttpServlet {
     private void adminDetail(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         detailCommon(req,resp);
+        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "case");
         req.getRequestDispatcher("/WEB-INF/views/case/case.jsp").forward(req, resp);
     }
 
     private void adminList(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         listCommon(req,resp);
+        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "case");
         req.getRequestDispatcher("/WEB-INF/views/case/case_list.jsp").forward(req, resp);
     }
 
@@ -289,11 +291,13 @@ public class CaseServlet extends HttpServlet {
 
     private void showEditPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
+        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "case");
         req.getRequestDispatcher("/WEB-INF/views/case/edit_case.jsp").forward(req, resp);
     }
 
     private void showAddPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
+        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "case");
         req.getRequestDispatcher("/WEB-INF/views/case/add_case.jsp").forward(req, resp);
     }
 
