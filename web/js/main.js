@@ -19,5 +19,25 @@ function checkFile(name, index, type, size) {
 }
 
 function login() {
-
+    var name = $("#name").val();
+    var password = $("#password").val();
+    if(name == null || name.trim() == "") {
+        swal("名称不能为空！", "","error");
+        return;
+    }
+    if(password == null || password.trim() == "") {
+        swal("密码不能为空！", "","error")
+        return;
+    }
+    $.post(contextPath + "/admin/login",
+        $("#login").serialize(),
+        function (data) {
+            if(data.error == "登录成功") {
+                window.location = contextPath + "../news/admin_list";
+                return;
+            } else {
+                swal(data.error,"","error");
+            }
+            $("#error").text(data.error);
+        }, "JSON");
 }

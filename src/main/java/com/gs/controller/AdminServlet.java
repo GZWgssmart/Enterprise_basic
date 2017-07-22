@@ -133,7 +133,7 @@ public class AdminServlet extends HttpServlet {
     private void showUpdatePage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "pwd");
-        req.getRequestDispatcher("/WEB-INF/views/admin/upload_pwd.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/views/admin/update_pwd.jsp").forward(req, resp);
     }
 
     private void showLoginPage(HttpServletRequest req, HttpServletResponse resp)
