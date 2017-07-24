@@ -23,9 +23,16 @@
                     <button type="button" class="btn btn-default btn-xs" data-toggle="offcanvas">所有服务</button>
                 </p>
                 <h3>进口权认定</h3>
-                <p>
-                    进口权认定详情
-                </p>
+                <p>申请对象：从事进出口业务的企业</p>
+                <p>所需材料：</p>
+                <ol>
+                    <li>营业执照副本复印件</li>
+                    <li>组织机构代码证副本复印件</li>
+                    <li>税务登记证副本复印件</li>
+                    <li>开户许可证复印件</li>
+                    <li>公司章程复印件</li>
+                    <li>法人身份证复印件</li>
+                </ol>
             </div>
         </div>
         <%@include file="../master/footer.jsp"%>
