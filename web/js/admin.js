@@ -42,7 +42,40 @@ function addCase() {
 }
 
 function addNews() {
-
+    var title = $("#title").val();
+    var abstracts = $("#abstracts").val();
+    var content = $("#content").val();
+    if(title == null || title.trim() == "") {
+        swal("新闻标题不能为空！", "","error");
+        return;
+    }
+    if(abstracts == null || abstracts.trim() == "") {
+        swal("新闻摘要不能为空！", "","error");
+        return;
+    }
+    if(content == null || content.trim() == "") {
+        swal("新闻详情不能为空！", "","error");
+        return;
+    }
+    $("#addNews").on('click', function() {
+        $("#addNews").ajaxSubmit({
+            type: 'post',
+            url: contextPath+'/news/add',
+            dataType : 'json',
+            data: $("#addNews").serialize(),
+            success: function(data) {
+                if(data.error == "添加成功") {
+                    window.location = contextPath + "/news/admin_list";
+                } else {
+                    swal(data.error,"","error");
+                }
+            },
+            error: function(data) {
+                swal(data.error,"","error");
+            }
+        });
+        return false; // 阻止表单自动提交
+    });
 }
 
 function updateCase() {
