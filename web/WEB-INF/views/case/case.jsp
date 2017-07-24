@@ -18,18 +18,18 @@
     <div class="row" style="margin-top: 20px;">
         <%@include file="../master/admin_left_sidebar.jsp"%>
         <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-            <h3 class="text-center">案例名称</h3>
-            <p class="text-center">发布时间</p>
-            <p>案例简介</p>
+            <h3 class="text-center">${requestScope.aCase.name}</h3>
+            <p class="text-center">${requestScope.aCase.createdTime}</p>
+            <p>${requestScope.aCase.customer}</p>
             <p>
-                <img src="<%=path %>/images/logo.jpg" class="img-responsive" />
+                <img src="<%=path %>/${requestScope.aCase.image}" class="img-responsive" />
             </p>
             <p>
-                案例详情
+                ${requestScope.aCase.content}
             </p>
             <hr />
             <a href="btn btn-default">编辑</a>
-            <a href="btn btn-default">删除</a>
+            <a href="javascript:void(0);" onclick="removeCase(${requestScope.aCase.id});">删除</a>
         </div>
 
     </div>
@@ -38,4 +38,5 @@
 
 </body>
 <%@include file="../master/script.inc.jsp"%>
+<script src="<%=path %>/js/admin.js"></script>
 </html>

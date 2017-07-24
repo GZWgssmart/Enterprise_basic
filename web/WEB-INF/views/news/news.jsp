@@ -17,22 +17,23 @@
     <div class="row" style="margin-top: 20px;">
         <%@include file="../master/admin_left_sidebar.jsp"%>
         <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-            <h3 class="text-center">新闻标题</h3>
-            <p class="text-center">发布时间</p>
-            <p>新闻摘要</p>
+            <h3 class="text-center">${requestScope.news.title}</h3>
+            <p class="text-center">${requestScope.news.createdTime}</p>
+            <p>${requestScope.news.abstracts}</p>
             <p>
-                <img src="<%=path %>/images/logo.jpg" class="img-responsive" />
+                <img src="<%=path %>/${requestScope.news.image}" class="img-responsive" />
             </p>
             <p>
-                新闻内容
+                ${requestScope.news.content}
             </p>
             <hr />
             <a href="btn btn-default">编辑</a>
-            <a href="btn btn-default">删除</a>
+            <a href="javascript:void(0);" onclick="removeNews(${requestScope.news.id});">删除</a>
         </div>
     </div>
     <%@include file="../master/footer.jsp"%>
 </div>
 </body>
 <%@include file="../master/script.inc.jsp"%>
+<script src="<%=path %>/js/admin.js"></script>
 </html>

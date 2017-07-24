@@ -255,7 +255,7 @@ public class CaseServlet extends HttpServlet {
         if(idStr != null) {
             int id = Integer.valueOf(idStr);
             Case aCase = caseServiceImpl.queryById(id);
-            req.setAttribute("case",aCase);
+            req.setAttribute("aCase",aCase);
         }
     }
 
