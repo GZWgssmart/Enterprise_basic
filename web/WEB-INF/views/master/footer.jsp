@@ -8,11 +8,11 @@
         <small>Copyright@百友汇企业服务有限公司&nbsp;&nbsp;技术支持：王振宇-13672297775</small>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-        <img src="<%=path %>/images/wechat.png" class="img-responsive" style="max-width:200px; max-height: 200px;">
+        <img src="<%=path %>/images/wechat.jpg" class="img-responsive" style="max-width:200px; max-height: 200px;">
         <p>扫码关注微信</p>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-        <img src="<%=path %>/images/wechat.png" class="img-responsive" style="max-width:200px; max-height: 200px;">
+        <img src="<%=path %>/images/wechat.jpg" class="img-responsive" style="max-width:200px; max-height: 200px;">
         <p>扫码查看名片</p>
     </div>
 </div>
