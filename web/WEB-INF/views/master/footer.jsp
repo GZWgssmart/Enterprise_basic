@@ -9,10 +9,10 @@
     </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
         <img src="<%=path %>/images/wechat.jpg" class="img-responsive center-block" style="max-width:200px; max-height: 200px;">
-        <p>扫码关注微信</p>
+        <p>扫码或长按识别微信二维码</p>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
         <img src="<%=path %>/images/card.png" class="img-responsive center-block" style="max-width:200px; max-height: 200px;">
-        <p>扫码查看名片</p>
+        <p>扫码或长按识别名片二维码</p>
     </div>
 </div>
