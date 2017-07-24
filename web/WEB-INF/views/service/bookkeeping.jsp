@@ -23,9 +23,17 @@
                     <button type="button" class="btn btn-default btn-xs" data-toggle="offcanvas">所有服务</button>
                 </p>
                 <h3>代理记账</h3>
-                <p>
-                    代理记账详情
-                </p>
+                <p>服务对象：所有行业公司（含小规模纳税人/一般纳税人、赣州本地及异地公司/分公司）</p>
+                <p>服务内容：</p>
+                <ol>
+                    <li>建账报税、零申报税</li>
+                    <li>税务违规处理的申请</li>
+                    <li>公司账目混乱的清理</li>
+                    <li>编制财务报表</li>
+                    <li>企业所得税年度汇算清缴</li>
+                    <li>税务审计（审计报告）</li>
+                    <li>进出口退税办理</li>
+                </ol>
             </div>
         </div>
         <%@include file="../master/footer.jsp"%>
