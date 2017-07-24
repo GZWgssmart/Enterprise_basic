@@ -25,6 +25,7 @@
                         <input type="password" class="form-control" id="password" name="password" placeholder="请输入登录密码">
                     </div>
                     <a class="btn btn-primary col-xs-12 col-sm-12 col-md-12 col-lg-12" href="javascript:void(0);" onclick="login();">登录</a>
+                    <a class="btn btn-primary col-xs-12 col-sm-12 col-md-12 col-lg-12" href="<%=path %>/" style="margin-top:15px;">返回首页</a>
                 </form>
             </div>
         </div>
