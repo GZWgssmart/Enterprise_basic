@@ -23,9 +23,16 @@
                     <button type="button" class="btn btn-default btn-xs" data-toggle="offcanvas">所有服务</button>
                 </p>
                 <h3>一般纳税人认定</h3>
-                <p>
-                    一般纳税人认定详情
-                </p>
+                <p>申请条件：</p>
+                <ol>
+                    <li>查账征收企业</li>
+                    <li>工业企业注册资本50万以上，商贸企业注册资本80万以上</li>
+                </ol>
+                <p>所需材料：</p>
+                <ol>
+                    <li>税务登记证副本原件</li>
+                    <li>公章</li>
+                </ol>
             </div>
         </div>
         <%@include file="../master/footer.jsp"%>
