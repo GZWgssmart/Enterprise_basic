@@ -21,7 +21,7 @@
         <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
             <h3>所有案例</h3>
 
-            <c:forEach items="${requestScope.pager.results }" var="aCase" varStatus="status">
+            <c:forEach items="${requestScope.casePager.results }" var="aCase" varStatus="status">
                 <a href="<%=path%>/case/admin_detail?id=${aCase.id}">
                     <div class="row" style="margin-bottom: 15px;">
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
@@ -44,8 +44,8 @@
             <div class="row">
                 <nav aria-label="..." class="text-center">
                     <ul class="pager">
-                        <li><a href="<%=path%>/case/admin_list?page=${requestScope.pager.page - 1}">上一页</a></li>
-                        <li><a href="<%=path%>/case/admin_list?page=${requestScope.pager.page + 1}">下一页</a></li>
+                        <li><a href="<%=path%>/case/admin_list?page=${requestScope.casePager.page - 1}">上一页</a></li>
+                        <li><a href="<%=path%>/case/admin_list?page=${requestScope.casePager.page + 1}">下一页</a></li>
                     </ul>
                 </nav>
             </div>

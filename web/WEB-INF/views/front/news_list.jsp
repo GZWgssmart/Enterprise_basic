@@ -19,7 +19,7 @@
         <%@include file="../master/left_sidebar.jsp"%>
         <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
             <h3>所有新闻</h3>
-            <c:forEach items="${requestScope.pager.results }" var="news" varStatus="status">
+            <c:forEach items="${requestScope.newsPager.results }" var="news" varStatus="status">
                 <a href="<%=path%>/news/detail?id=${news.id}">
                     <div class="row" style="margin-bottom: 15px;">
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
@@ -40,8 +40,8 @@
             <div class="row">
                 <nav aria-label="..." class="text-center">
                     <ul class="pager">
-                        <li><a href="<%=path%>/news/list?page=${requestScope.pager.page - 1}">上一页</a></li>
-                        <li><a href="<%=path%>/news/list?page=${requestScope.pager.page + 1}">下一页</a></li>
+                        <li><a href="<%=path%>/news/list?page=${requestScope.newsPager.page - 1}">上一页</a></li>
+                        <li><a href="<%=path%>/news/list?page=${requestScope.newsPager.page + 1}">下一页</a></li>
                     </ul>
                 </nav>
             </div>

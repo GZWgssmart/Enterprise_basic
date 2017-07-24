@@ -3,6 +3,7 @@ package com.gs.controller;
 import com.alibaba.fastjson.JSON;
 import com.gs.bean.Admin;
 import com.gs.bean.Case;
+import com.gs.common.CommonMethod;
 import com.gs.common.Constants;
 import com.gs.common.WebUtil;
 import com.gs.common.bean.Pager;
@@ -34,7 +35,7 @@ import java.util.Map;
 public class CaseServlet extends HttpServlet {
     private static final long serialVersionUID = 2580077429082764753L;
 
-    private CaseService caseServiceImpl;
+    private CaseServiceImpl caseServiceImpl;
 
     public CaseServlet() {
         caseServiceImpl = new CaseServiceImpl();
@@ -83,27 +84,27 @@ public class CaseServlet extends HttpServlet {
      */
     private void detail(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        detailCommon(req,resp);
+        CommonMethod.caseDetailCommon(req,resp,caseServiceImpl);
         req.getRequestDispatcher("/WEB-INF/views/front/case.jsp").forward(req, resp);
     }
 
     private void list(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        listCommon(req,resp);
+        CommonMethod.caseListCommon(req,resp,caseServiceImpl);
         req.setAttribute(Constants.CURRENT_PAGE, "case");
         req.getRequestDispatcher("/WEB-INF/views/front/case_list.jsp").forward(req, resp);
     }
 
     private void adminDetail(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        detailCommon(req,resp);
+        CommonMethod.caseDetailCommon(req,resp,caseServiceImpl);
         req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "case");
         req.getRequestDispatcher("/WEB-INF/views/case/case.jsp").forward(req, resp);
     }
 
     private void adminList(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        listCommon(req,resp);
+        CommonMethod.caseListCommon(req,resp,caseServiceImpl);
         req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "case");
         req.getRequestDispatcher("/WEB-INF/views/case/case_list.jsp").forward(req, resp);
     }
@@ -240,53 +241,6 @@ public class CaseServlet extends HttpServlet {
                 e.printStackTrace();
             }
         }
-    }
-
-    /**
-     * 详情的通用方法
-     * @param req
-     * @param resp
-     * @throws ServletException
-     * @throws IOException
-     */
-    private void detailCommon(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
-        String idStr = req.getParameter("id");
-        if(idStr != null) {
-            int id = Integer.valueOf(idStr);
-            Case aCase = caseServiceImpl.queryById(id);
-            req.setAttribute("aCase",aCase);
-        }
-    }
-
-    /**
-     * 分页的通用方法
-     * @param req
-     * @param resp
-     * @throws ServletException
-     * @throws IOException
-     */
-    private void listCommon(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException  {
-        int total = caseServiceImpl.count();
-        int pageCount = total % Constants.PAGESIZE == 0 ? total / Constants.PAGESIZE : total / Constants.PAGESIZE + 1 ;// 总页数
-        String pageStr = req.getParameter("page");
-        int page = 1;
-        if(pageStr != null) {
-            page = Integer.valueOf(pageStr); // 当前页
-            if(page <= 0) {
-                page = 1;
-            } else if(page > pageCount) {
-                page = pageCount;
-            }
-        }
-        Pager<Case> pager = new Pager<Case>();
-        pager.setPageSize(Constants.PAGESIZE);
-        pager.setPage(page);
-        List<Case> caseList = caseServiceImpl.queryByPager(pager);
-        pager.setResults(caseList);
-        pager.setTotal(total);
-        req.setAttribute("pager",pager);
     }
 
     private void showEditPage(HttpServletRequest req, HttpServletResponse resp)

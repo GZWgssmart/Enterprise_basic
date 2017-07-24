@@ -3,11 +3,10 @@ package com.gs.controller;
 import com.alibaba.fastjson.JSON;
 import com.gs.bean.Admin;
 import com.gs.bean.News;
+import com.gs.common.CommonMethod;
 import com.gs.common.Constants;
 import com.gs.common.WebUtil;
-import com.gs.common.bean.Pager;
 import com.gs.common.util.FileUtil;
-import com.gs.service.NewsService;
 import com.gs.service.impl.NewsServiceImpl;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
@@ -27,8 +26,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.sun.javafx.fxml.expression.Expression.add;
-
 /**
  * Created by Wang Genshen on 2017-07-17.
  */
@@ -36,7 +33,7 @@ import static com.sun.javafx.fxml.expression.Expression.add;
 public class NewsServlet extends HttpServlet {
     private static final long serialVersionUID = 6217730300422759573L;
 
-    private NewsService newsServiceImpl;
+    private NewsServiceImpl newsServiceImpl;
 
     public NewsServlet() {
         newsServiceImpl = new NewsServiceImpl();
@@ -77,27 +74,27 @@ public class NewsServlet extends HttpServlet {
 
     private void detail(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        detailCommon(req,resp);
+        CommonMethod.newsDetailCommon(req,resp,newsServiceImpl);
         req.getRequestDispatcher("/WEB-INF/views/front/news.jsp").forward(req, resp);
     }
 
     private void list(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        listCommon(req,resp);
+        CommonMethod.newsListCommon(req,resp,newsServiceImpl);
         req.setAttribute(Constants.CURRENT_PAGE, "news");
         req.getRequestDispatcher("/WEB-INF/views/front/news_list.jsp").forward(req, resp);
     }
 
     private void adminDetail(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        detailCommon(req,resp);
+        CommonMethod.newsDetailCommon(req,resp,newsServiceImpl);
         req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "news");
         req.getRequestDispatcher("/WEB-INF/views/news/news.jsp").forward(req, resp);
     }
 
     private void adminList(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        listCommon(req,resp);
+        CommonMethod.newsListCommon(req,resp,newsServiceImpl);
         req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "news");
         req.getRequestDispatcher("/WEB-INF/views/news/news_list.jsp").forward(req, resp);
     }
@@ -234,53 +231,6 @@ public class NewsServlet extends HttpServlet {
                 e.printStackTrace();
             }
         }
-    }
-
-    /**
-     * 详情的通用方法
-     * @param req
-     * @param resp
-     * @throws ServletException
-     * @throws IOException
-     */
-    private void detailCommon(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
-        String idStr = req.getParameter("id");
-        if(idStr != null) {
-            int id = Integer.valueOf(idStr);
-            News news = newsServiceImpl.queryById(id);
-            req.setAttribute("news",news);
-        }
-    }
-
-    /**
-     * 分页的通用方法
-     * @param req
-     * @param resp
-     * @throws ServletException
-     * @throws IOException
-     */
-    private void listCommon(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException  {
-        int total = newsServiceImpl.count();
-        int pageCount = total % Constants.PAGESIZE == 0 ? total / Constants.PAGESIZE : total / Constants.PAGESIZE + 1 ;// 总页数
-        String pageStr = req.getParameter("page");
-        int page = 1;
-        if(pageStr != null) {
-            page = Integer.valueOf(pageStr); // 当前页
-            if(page <= 0) {
-                page = 1;
-            } else if(page > pageCount) {
-                page = pageCount;
-            }
-        }
-        Pager<News> pager = new Pager<News>();
-        pager.setPageSize(Constants.PAGESIZE);
-        pager.setPage(page);
-        List<News> caseList = newsServiceImpl.queryByPager(pager);
-        pager.setResults(caseList);
-        pager.setTotal(total);
-        req.setAttribute("pager",pager);
     }
 
     private void showEditPage(HttpServletRequest req, HttpServletResponse resp)
