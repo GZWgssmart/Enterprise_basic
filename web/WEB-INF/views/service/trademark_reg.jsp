@@ -23,9 +23,14 @@
                     <button type="button" class="btn btn-default btn-xs" data-toggle="offcanvas">所有服务</button>
                 </p>
                 <h3>商标注册</h3>
-                <p>
-                    商标注册详情
-                </p>
+                <p>含义：商品生产者和经营者为了使自己生产或经营的商品同其他商品区别开来而使用的一种标记。这种标记通常由文字、图形英文、数字的组合构成。</p>
+                <p>所需材料：</p>
+                <ol>
+                    <li>营业执照副本复印件</li>
+                    <li>法人身份证复印件</li>
+                    <li>公章</li>
+                    <li>商标名称、图片</li>
+                </ol>
             </div>
         </div>
         <%@include file="../master/footer.jsp"%>
