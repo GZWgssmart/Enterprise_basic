@@ -27,7 +27,7 @@
                     <input type="text" class="form-control" id="abstracts" name="abstracts" value="${requestScope.news.abstracts}">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" id="content" name="content">${requestScope.news.content}</textarea>
+                    <textarea class="form-control" id="content" name="content" rows="10">${requestScope.news.content}</textarea>
                 </div>
                 <div class="form-group">
                     <input type="file" class="form-control" id="image" name="image" multiple>

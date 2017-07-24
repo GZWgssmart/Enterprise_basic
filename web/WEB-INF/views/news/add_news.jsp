@@ -26,7 +26,7 @@
                     <input type="text" class="form-control" id="abstracts" name="abstracts" placeholder="请输入新闻摘要">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" id="content" name="content" placeholder="请输入新闻详情"></textarea>
+                    <textarea class="form-control" id="content" name="content" placeholder="请输入新闻详情" rows="10"></textarea>
                 </div>
                 <div class="form-group">
                     <input type="file" class="form-control" id="image" name="image" multiple>

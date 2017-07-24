@@ -28,7 +28,7 @@
                     <input type="text" class="form-control" id="customer" name="customer" value="${requestScope.aCase.customer}">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" id="content" name="content">${requestScope.aCase.content}</textarea>
+                    <textarea class="form-control" id="content" name="content" rows="10">${requestScope.aCase.content}</textarea>
                 </div>
                 <div class="form-group">
                     <input type="file" class="form-control" id="image" name="image" multiple>
