@@ -22,6 +22,6 @@ public final class Constants {
 
     public static final String CURREANT_ADMIN_PAGE = "admin_page";
 
-    public static final int PAGESIZE = 20;
+    public static final int PAGESIZE = 5;
 
 }

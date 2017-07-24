@@ -44,8 +44,8 @@
             <div class="row">
                 <nav aria-label="..." class="text-center">
                     <ul class="pager">
-                        <li><a href="#">上一页</a></li>
-                        <li><a href="#">下一页</a></li>
+                        <li><a href="<%=path%>/case/admin_list?page=${requestScope.pager.page - 1}">上一页</a></li>
+                        <li><a href="<%=path%>/case/admin_list?page=${requestScope.pager.page + 1}">下一页</a></li>
                     </ul>
                 </nav>
             </div>
