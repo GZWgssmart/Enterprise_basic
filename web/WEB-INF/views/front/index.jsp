@@ -19,28 +19,31 @@
     <div class="row" style="margin-top: 20px;">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
-                <img src="<%=path %>/images/company.jpg" alt="公司注册" class="img-responsive img-rounded">
+                <a href="<%=path %>/service/comreg">
+                    <img src="<%=path %>/images/company.jpg" alt="公司注册" class="img-responsive img-rounded">
+                </a>
                 <div class="caption">
-                    <h3>公司注册</h3>
-                    <p>...</p>
+                    <h3 class="text-center"><a href="<%=path %>/service/comreg">公司注册</a></h3>
                 </div>
             </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
-                <img src="<%=path %>/images/fee.jpg" alt="代理记账" class="img-responsive img-rounded">
+                <a href="<%=path %>/service/bookkeep">
+                    <img src="<%=path %>/images/fee.jpg" alt="代理记账" class="img-responsive img-rounded">
+                </a>
                 <div class="caption">
-                    <h3>代理记账</h3>
-                    <p>...</p>
+                    <h3 class="text-center"><a href="<%=path %>/service/bookkeep">代理记账</a></h3>
                 </div>
             </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="thumbnail">
-                <img src="<%=path %>/images/brand.jpg" alt="商标注册" class="img-responsive img-rounded">
+                <a href="<%=path %>/service/trademark_reg">
+                    <img src="<%=path %>/images/brand.jpg" alt="商标注册" class="img-responsive img-rounded">
+                </a>
                 <div class="caption">
-                    <h3>商标注册</h3>
-                    <p>...</p>
+                    <h3 class="text-center"><a href="<%=path %>/service/trademark_reg">商标注册</a></h3>
                 </div>
             </div>
         </div>
