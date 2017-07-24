@@ -20,7 +20,7 @@
             <%@include file="../master/left_sidebar_canvas.jsp"%>
             <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 ">
                 <p class="visible-xs">
-                    <button type="button" class="btn btn-default btn-xs" data-toggle="offcanvas">所有服务</button>
+                    <button type="button" class="btn btn-default" data-toggle="offcanvas">所有服务</button>
                 </p>
                 <h3>公司注册</h3>
 

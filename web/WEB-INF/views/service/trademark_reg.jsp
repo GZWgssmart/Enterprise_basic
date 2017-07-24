@@ -20,7 +20,7 @@
             <%@include file="../master/left_sidebar_canvas.jsp"%>
             <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 ">
                 <p class="visible-xs">
-                    <button type="button" class="btn btn-default btn-xs" data-toggle="offcanvas">所有服务</button>
+                    <button type="button" class="btn btn-default" data-toggle="offcanvas">所有服务</button>
                 </p>
                 <h3>商标注册</h3>
                 <p>含义：商品生产者和经营者为了使自己生产或经营的商品同其他商品区别开来而使用的一种标记。这种标记通常由文字、图形英文、数字的组合构成。</p>
