@@ -27,7 +27,7 @@
                 ${requestScope.news.content}
             </p>
             <hr />
-            <a href="btn btn-default">编辑</a>
+            <a href="<%=path%>/news/edit_page?id=${requestScope.news.id}">编辑</a>
             <a href="javascript:void(0);" onclick="removeNews(${requestScope.news.id});">删除</a>
         </div>
     </div>

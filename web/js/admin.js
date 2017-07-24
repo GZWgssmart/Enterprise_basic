@@ -79,11 +79,71 @@ function addNews() {
 }
 
 function updateCase() {
-
+    var name = $("#name").val();
+    var customer = $("#customer").val();
+    var content = $("#content").val();
+    if(name == null || name.trim() == "") {
+        swal("案例名称不能为空！", "","error");
+        return;
+    }
+    if(customer == null || customer.trim() == "") {
+        swal("客户名称不能为空！", "","error");
+        return;
+    }
+    if(content == null || content.trim() == "") {
+        swal("案例详情不能为空！", "","error");
+        return;
+    }
+    $("#editCase").on('click', function () {
+        $("#editCase").ajaxSubmit({
+            type: 'post',
+            url: contextPath + '/case/edit',
+            dataType: 'json',
+            data: $("#editCase").serialize(),
+            success: function (data) {
+                if (data.error == "修改成功") {
+                    window.location = contextPath + "/case/admin_list";
+                } else {
+                    swal(data.error);
+                }
+            }
+        });
+        return false; // 阻止表单自动提交
+    });
 }
 
 function updateNews() {
-
+    var title = $("#title").val();
+    var abstracts = $("#abstracts").val();
+    var content = $("#content").val();
+    if(title == null || title.trim() == "") {
+        swal("新闻标题不能为空！", "","error");
+        return;
+    }
+    if(abstracts == null || abstracts.trim() == "") {
+        swal("新闻摘要不能为空！", "","error");
+        return;
+    }
+    if(content == null || content.trim() == "") {
+        swal("新闻详情不能为空！", "","error");
+        return;
+    }
+    $("#editNews").on('click', function () {
+        $("#editNews").ajaxSubmit({
+            type: 'post',
+            url: contextPath + '/news/edit',
+            dataType: 'json',
+            data: $("#editNews").serialize(),
+            success: function (data) {
+                if (data.error == "修改成功") {
+                    window.location = contextPath + "/news/admin_list";
+                } else {
+                    swal(data.error);
+                }
+            }
+        });
+        return false; // 阻止表单自动提交
+    });
 }
 
 function removeNews(id) {

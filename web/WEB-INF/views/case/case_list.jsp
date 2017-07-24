@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="btn btn-default">编辑</a>
+                <a href="<%=path%>/case/edit_page?id=${aCase.id}">编辑</a>
                 <a href="javascript:void(0);" onclick="removeCase(${aCase.id});">删除</a>
                 <hr />
             </c:forEach>

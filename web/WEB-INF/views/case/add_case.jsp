@@ -27,7 +27,7 @@
                     <input type="text" class="form-control" id="customer" name="customer" placeholder="请输入客户名称">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="content" name="content" placeholder="请输入案例详情">
+                    <textarea class="form-control" id="content" name="content" placeholder="请输入案例详情"></textarea>
                 </div>
                 <div class="form-group">
                     <input type="file" class="form-control" id="image" name="image" multiple>
