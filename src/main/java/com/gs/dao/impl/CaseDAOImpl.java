@@ -54,7 +54,7 @@ public class CaseDAOImpl extends AbstractBaseDAO implements CaseDAO {
 
     public void remove(Integer integer) {
         getConnection();
-        String sql = "delect from t_case where id = ?";
+        String sql = "DELETE FROM t_case WHERE id = ?;";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, integer);

@@ -85,3 +85,47 @@ function updateCase() {
 function updateNews() {
 
 }
+
+function removeNews(id) {
+    swal({
+        title: "确定删除吗？",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "确定删除！",
+        closeOnConfirm: false
+    },function(){
+        $.post(contextPath + "/news/remove",
+            {'id':id },
+            function (data) {
+                if(data.error == "删除成功") {
+                    window.location = contextPath + "admin_list";
+                    return;
+                } else {
+                    swal(data.error,"","error");
+                }
+            }, "JSON");
+    });
+}
+
+function removeCase(id) {
+    swal({
+        title: "确定删除吗？",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "确定删除！",
+        closeOnConfirm: false
+    },function(){
+        $.post(contextPath + "/case/remove",
+            {'id':id },
+            function (data) {
+                if(data.error == "删除成功") {
+                    window.location = contextPath + "admin_list";
+                    return;
+                } else {
+                    swal(data.error,"","error");
+                }
+            }, "JSON");
+    });
+}

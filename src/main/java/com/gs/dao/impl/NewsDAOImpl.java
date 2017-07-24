@@ -54,7 +54,7 @@ public class NewsDAOImpl extends AbstractBaseDAO implements NewsDAO {
 
     public void remove(Integer integer) {
         getConnection();
-        String sql = "delect from t_news where id = ?";
+        String sql = "DELETE FROM t_news WHERE id = ?;";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, integer);

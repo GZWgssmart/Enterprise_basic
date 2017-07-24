@@ -37,7 +37,7 @@
                     </div>
                 </a>
                 <a href="btn btn-default">编辑</a>
-                <a href="btn btn-default">删除</a>
+                <a href="javascript:void(0);" onclick="removeCase(${aCase.id});">删除</a>
                 <hr />
             </c:forEach>
 
@@ -57,4 +57,5 @@
 
 </body>
 <%@include file="../master/script.inc.jsp"%>
+<script src="<%=path %>/js/admin.js"></script>
 </html>
