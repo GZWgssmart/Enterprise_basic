@@ -20,59 +20,29 @@
         <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
             <h3>所有案例</h3>
 
-            <a href="#">
-                <div class="row" style="margin-bottom: 15px;">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
+            <c:forEach items="${requestScope.pager.results }" var="aCase" varStatus="status">
+                <a href="<%=path%>/case/detail?id=${aCase.id}">
+                    <div class="row" style="margin-bottom: 15px;">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <img src="<%=path%>/${aCase.image }" class="img-responsive" style="max-width:100px;max-height: 100px;" />
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-6">
+                            <p>${aCase.name }</p>
+                            <small>${aCase.customer }</small>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                                ${aCase.createdTime }
+                        </div>
                     </div>
-                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-6">
-                        <p>公司名称</p>
-                        <small>案例简介</small>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                        发布时间
-                    </div>
-                </div>
-            </a>
-            <hr />
-
-            <a href="#">
-                <div class="row" style="margin-bottom: 15px;">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-6">
-                        <p>公司名称</p>
-                        <small>案例简介</small>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                        发布时间
-                    </div>
-                </div>
-            </a>
-            <hr />
-
-            <a href="#">
-                <div class="row" style="margin-bottom: 15px;">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                        <img src="<%=path%>/images/logo.jpg" class="img-responsive" style="max-width:100px;max-height: 100px;" />
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-6">
-                        <p>公司名称</p>
-                        <small>案例简介</small>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
-                        发布时间
-                    </div>
-                </div>
-            </a>
-            <hr />
+                </a>
+                <hr />
+            </c:forEach>
 
             <div class="row">
                 <nav aria-label="..." class="text-center">
                     <ul class="pager">
-                        <li><a href="#">上一页</a></li>
-                        <li><a href="#">下一页</a></li>
+                        <li><a href="<%=path%>/case/list?page=${requestScope.pager.page - 1}">上一页</a></li>
+                        <li><a href="<%=path%>/case/list?page=${requestScope.pager.page + 1}">下一页</a></li>
                     </ul>
                 </nav>
             </div>
