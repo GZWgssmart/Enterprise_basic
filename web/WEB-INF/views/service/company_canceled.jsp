@@ -23,9 +23,26 @@
                     <button type="button" class="btn btn-default btn-xs" data-toggle="offcanvas">所有服务</button>
                 </p>
                 <h3>公司注销</h3>
-                <p>
-                    公司注销详情
-                </p>
+                <h4>营业执照注销</h4>
+                <p>所需材料：营业执照正、副本原件、公章、登报公告</p>
+                <h4>组织机构代码证注销</h4>
+                <p>所需材料：</p>
+                <ol>
+                    <li>营业执照注销通知书</li>
+                    <li>组织机构代码证正、副本原件</li>
+                    <li>公章</li>
+                </ol>
+                <h4>税务登记证注销</h4>
+                <ol>
+                    <li>《税务注销登记审批表》</li>
+                    <li>《发票领购簿》及未使用的空白发票、未验旧发票存根联原件</li>
+                    <li>税务登记证正、副本原件</li>
+                    <li>股东会决议</li>
+                    <li>注销申请书</li>
+                    <li>公章</li>
+                    <li>最近3年的账册及原始凭证、财务报表</li>
+                    <li>注销清算报告</li>
+                </ol>
             </div>
         </div>
         <%@include file="../master/footer.jsp"%>
