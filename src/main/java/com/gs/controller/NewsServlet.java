@@ -223,7 +223,7 @@ public class NewsServlet extends HttpServlet {
                     }
                 }
                 if (news.getImage() == null) {
-                    news.setImage("uploads/logo,jpg");
+                    news.setImage("uploads/newsDefault.jpg");
                 }
                 newsServiceImpl.add(news);
                 resp.setContentType("json");

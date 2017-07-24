@@ -31,6 +31,11 @@
                 <li <c:if test="${requestScope.page == 'contact'}">class="active"</c:if>>
                     <a href="<%=path %>/front/contact">联系我们</a>
                 </li>
+                <c:if test="${sessionScope.admin != null}">
+                    <li <c:if test="${requestScope.page == 'news'}">class="active"</c:if>>
+                        <a href="<%=path %>/news/admin_list">管理中心</a>
+                    </li>
+                </c:if>
             </ul>
         </div>
     </div>
