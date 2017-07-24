@@ -23,9 +23,17 @@
                     <button type="button" class="btn btn-default btn-xs" data-toggle="offcanvas">所有服务</button>
                 </p>
                 <h3>食品流通许可证</h3>
-                <p>
-                    食品流通许可证详情
-                </p>
+                <p>申请对象：从事流通领域食品经营活动的企业和个人</p>
+                <p>所需材料：</p>
+                <ol>
+                    <li>食品流通许可证申请表</li>
+                    <li>营业执照副本复印件</li>
+                    <li>法人身份证复印件</li>
+                    <li>租赁合同</li>
+                    <li>房产证复印件</li>
+                    <li>健康证</li>
+                    <li>经营场地平面图</li>
+                </ol>
             </div>
         </div>
         <%@include file="../master/footer.jsp"%>
