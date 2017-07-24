@@ -291,7 +291,7 @@ public class NewsServlet extends HttpServlet {
 
     private void showAddPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "news");
+        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "addNews");
         req.getRequestDispatcher("/WEB-INF/views/news/add_news.jsp").forward(req, resp);
     }
 }

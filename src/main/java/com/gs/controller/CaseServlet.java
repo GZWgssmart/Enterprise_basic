@@ -297,7 +297,7 @@ public class CaseServlet extends HttpServlet {
 
     private void showAddPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "case");
+        req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "addCase");
         req.getRequestDispatcher("/WEB-INF/views/case/add_case.jsp").forward(req, resp);
     }
 
