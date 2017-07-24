@@ -230,6 +230,9 @@ public class CaseServlet extends HttpServlet {
                         }
                     }
                 }
+                if (cases.getImage() == null) {
+                    cases.setImage("uploads/logo.jpg");
+                }
                 caseServiceImpl.add(cases);
                 resp.setContentType("json");
                 map.put("error", "添加成功");
