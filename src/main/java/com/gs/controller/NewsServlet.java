@@ -7,6 +7,7 @@ import com.gs.common.CommonMethod;
 import com.gs.common.Constants;
 import com.gs.common.WebUtil;
 import com.gs.common.util.FileUtil;
+import com.gs.service.NewsService;
 import com.gs.service.impl.NewsServiceImpl;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
@@ -33,7 +34,7 @@ import java.util.Map;
 public class NewsServlet extends HttpServlet {
     private static final long serialVersionUID = 6217730300422759573L;
 
-    private NewsServiceImpl newsServiceImpl;
+    private NewsService newsServiceImpl;
 
     public NewsServlet() {
         newsServiceImpl = new NewsServiceImpl();

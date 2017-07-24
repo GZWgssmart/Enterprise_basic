@@ -3,6 +3,8 @@ package com.gs.controller;
 import com.gs.common.CommonMethod;
 import com.gs.common.Constants;
 import com.gs.common.WebUtil;
+import com.gs.service.CaseService;
+import com.gs.service.NewsService;
 import com.gs.service.impl.CaseServiceImpl;
 import com.gs.service.impl.NewsServiceImpl;
 
@@ -20,8 +22,8 @@ import java.io.IOException;
 public class FrontServlet extends HttpServlet {
     private static final long serialVersionUID = -7525261178354023288L;
 
-    private NewsServiceImpl newsServiceImpl;
-    private CaseServiceImpl caseServiceImpl;
+    private NewsService newsServiceImpl;
+    private CaseService caseServiceImpl;
 
     public FrontServlet() {
         newsServiceImpl = new NewsServiceImpl();

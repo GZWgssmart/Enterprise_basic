@@ -6,7 +6,6 @@ import com.gs.bean.Case;
 import com.gs.common.CommonMethod;
 import com.gs.common.Constants;
 import com.gs.common.WebUtil;
-import com.gs.common.bean.Pager;
 import com.gs.common.util.FileUtil;
 import com.gs.service.CaseService;
 import com.gs.service.impl.CaseServiceImpl;
@@ -35,7 +34,7 @@ import java.util.Map;
 public class CaseServlet extends HttpServlet {
     private static final long serialVersionUID = 2580077429082764753L;
 
-    private CaseServiceImpl caseServiceImpl;
+    private CaseService caseServiceImpl;
 
     public CaseServlet() {
         caseServiceImpl = new CaseServiceImpl();

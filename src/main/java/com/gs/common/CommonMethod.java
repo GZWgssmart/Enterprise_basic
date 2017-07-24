@@ -3,6 +3,8 @@ package com.gs.common;
 import com.gs.bean.Case;
 import com.gs.bean.News;
 import com.gs.common.bean.Pager;
+import com.gs.service.CaseService;
+import com.gs.service.NewsService;
 import com.gs.service.impl.CaseServiceImpl;
 import com.gs.service.impl.NewsServiceImpl;
 
@@ -23,7 +25,7 @@ public class CommonMethod {
      * @throws ServletException
      * @throws IOException
      */
-    public static void caseDetailCommon(HttpServletRequest req, HttpServletResponse resp, CaseServiceImpl caseServiceImpl)
+    public static void caseDetailCommon(HttpServletRequest req, HttpServletResponse resp, CaseService caseServiceImpl)
             throws ServletException, IOException {
         String idStr = req.getParameter("id");
         if(idStr != null) {
@@ -40,7 +42,7 @@ public class CommonMethod {
      * @throws ServletException
      * @throws IOException
      */
-    public static void caseListCommon(HttpServletRequest req, HttpServletResponse resp, CaseServiceImpl caseServiceImpl)
+    public static void caseListCommon(HttpServletRequest req, HttpServletResponse resp, CaseService caseServiceImpl)
             throws ServletException, IOException  {
         int total = caseServiceImpl.count();
         int pageCount = total % Constants.PAGESIZE == 0 ? total / Constants.PAGESIZE : total / Constants.PAGESIZE + 1 ;// 总页数
@@ -70,7 +72,7 @@ public class CommonMethod {
      * @throws ServletException
      * @throws IOException
      */
-    public static void newsDetailCommon(HttpServletRequest req, HttpServletResponse resp, NewsServiceImpl newsServiceImpl)
+    public static void newsDetailCommon(HttpServletRequest req, HttpServletResponse resp, NewsService newsServiceImpl)
             throws ServletException, IOException {
         String idStr = req.getParameter("id");
         if(idStr != null) {
@@ -87,7 +89,7 @@ public class CommonMethod {
      * @throws ServletException
      * @throws IOException
      */
-    public static void newsListCommon(HttpServletRequest req, HttpServletResponse resp, NewsServiceImpl newsServiceImpl)
+    public static void newsListCommon(HttpServletRequest req, HttpServletResponse resp, NewsService newsServiceImpl)
             throws ServletException, IOException  {
         int total = newsServiceImpl.count();
         int pageCount = total % Constants.PAGESIZE == 0 ? total / Constants.PAGESIZE : total / Constants.PAGESIZE + 1 ;// 总页数
