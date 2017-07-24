@@ -63,7 +63,7 @@ public class FrontServlet extends HttpServlet {
             throws ServletException, IOException {
         req.setAttribute(Constants.CURRENT_PAGE, "service");
         req.setAttribute(Constants.CURRENT_SERVICE_PAGE, "comreg");
-        req.getRequestDispatcher("/WEB-INF/views/front/services.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/views/service/comreg.jsp").forward(req, resp);
     }
 
     private void showAboutPage(HttpServletRequest req, HttpServletResponse resp)
