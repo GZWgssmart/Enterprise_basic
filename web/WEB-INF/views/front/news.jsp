@@ -18,14 +18,14 @@
     <div class="row" style="margin-top: 20px;">
         <%@include file="../master/left_sidebar.jsp"%>
         <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-            <h3 class="text-center">新闻标题</h3>
-            <p class="text-center">发布时间</p>
-            <p>新闻摘要</p>
+            <h3 class="text-center">${requestScope.news.title}</h3>
+            <p class="text-center">${requestScope.news.createdTime}</p>
+            <p>${requestScope.news.abstracts}</p>
             <p>
-                <img src="<%=path %>/images/logo.jpg" class="img-responsive" />
+                <img src="<%=path %>/${requestScope.news.image}" class="img-responsive" />
             </p>
             <p>
-                新闻内容
+                ${requestScope.news.content}
             </p>
         </div>
     </div>
