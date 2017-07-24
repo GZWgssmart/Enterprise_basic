@@ -28,7 +28,7 @@
                 ${requestScope.aCase.content}
             </p>
             <hr />
-            <a href="btn btn-default">编辑</a>
+            <a href="<%=path%>/case/edit_page?id=${requestScope.aCase.id}">编辑</a>
             <a href="javascript:void(0);" onclick="removeCase(${requestScope.aCase.id});">删除</a>
         </div>
 

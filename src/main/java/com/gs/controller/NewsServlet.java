@@ -222,6 +222,9 @@ public class NewsServlet extends HttpServlet {
                         }
                     }
                 }
+                if (news.getImage() == null) {
+                    news.setImage("uploads/logo,jpg");
+                }
                 newsServiceImpl.add(news);
                 resp.setContentType("json");
                 map.put("error", "添加成功");
@@ -236,6 +239,10 @@ public class NewsServlet extends HttpServlet {
 
     private void showEditPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
+        String idStr = req.getParameter("id");
+        int id = Integer.valueOf(idStr);
+        News news = newsServiceImpl.queryById(id);
+        req.setAttribute("news",news);
         req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "news");
         req.getRequestDispatcher("/WEB-INF/views/news/edit_news.jsp").forward(req, resp);
     }

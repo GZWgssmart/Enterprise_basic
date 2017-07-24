@@ -230,6 +230,9 @@ public class CaseServlet extends HttpServlet {
                         }
                     }
                 }
+                if (cases.getImage() == null) {
+                    cases.setImage("uploads/logo.jpg");
+                }
                 caseServiceImpl.add(cases);
                 resp.setContentType("json");
                 map.put("error", "添加成功");
@@ -244,6 +247,10 @@ public class CaseServlet extends HttpServlet {
 
     private void showEditPage(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
+        String idStr = req.getParameter("id");
+        int id = Integer.valueOf(idStr);
+        Case aCase = caseServiceImpl.queryById(id);
+        req.setAttribute("aCase",aCase);
         req.setAttribute(Constants.CURREANT_ADMIN_PAGE, "case");
         req.getRequestDispatcher("/WEB-INF/views/case/edit_case.jsp").forward(req, resp);
     }
