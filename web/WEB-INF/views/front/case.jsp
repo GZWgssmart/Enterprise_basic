@@ -18,14 +18,14 @@
     <div class="row" style="margin-top: 20px;">
         <%@include file="../master/left_sidebar.jsp"%>
         <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-            <h3 class="text-center">案例名称</h3>
-            <p class="text-center">发布时间</p>
-            <p>案例简介</p>
+            <h3 class="text-center">${requestScope.aCase.name}</h3>
+            <p class="text-center">${requestScope.aCase.createdTime}</p>
+            <p>${requestScope.aCase.customer}</p>
             <p>
-                <img src="<%=path %>/images/logo.jpg" class="img-responsive" />
+                <img src="<%=path %>/${requestScope.aCase.image}" class="img-responsive" />
             </p>
             <p>
-                案例详情
+                ${requestScope.aCase.content}
             </p>
         </div>
     </div>
