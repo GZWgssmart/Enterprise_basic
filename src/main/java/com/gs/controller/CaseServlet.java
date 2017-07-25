@@ -231,7 +231,7 @@ public class CaseServlet extends HttpServlet {
                     }
                 }
                 if (cases.getImage() == null) {
-                    cases.setImage("uploads/caseDefault.jpg");
+                    cases.setImage("images/caseDefault.jpg");
                 }
                 caseServiceImpl.add(cases);
                 resp.setContentType("json");
